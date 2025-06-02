@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="home-styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Squishy Playground - Home</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="./home.html">
+            <img class="logo" src="../images/logo.png"></img>
+        </a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../party_themes/party-themes.html">Party Themes</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h1>Squishy Playground</h1>
+    </section>
+
+    <section class="page-description">
+        <h2>About Squishy Playground</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia lacus nec
+            sapien blandit, non vehicula eros pretium. Curabitur tincidunt felis nec nisi facilisis, sed vehicula est
+            suscipit. Vivamus vel lacinia nulla, at gravida turpis. Sed ut nisi sed metus varius auctor ac at urna.
+            Integer volutpat, turpis sit amet pharetra vehicula, urna mi suscipit libero, non sollicitudin nunc felis
+            eget magna. Aliquam erat volutpat. Cras ut orci at mauris ultricies vestibulum. Duis vehicula, tortor in
+            facilisis imperdiet, libero elit malesuada elit, at dignissim est nisi nec magna.</p>
+
+        <div class="enquire-section">
+            <button class="enquire-button" onclick="window.location.href='../about/about.html'">Learn More</button>
+        </div>
+    </section>
+
+    <section class="party-theme">
+        <h2>Party Theme Overview</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent
+            nec velit vitae lectus volutpat tincidunt.</p>
+        <div class="themes">
+            <div class="theme fairy" onclick="window.location.href='../fairy_theme/fairy-theme.html'">
+                <div class="overlay"></div>
+                <span class="theme-text">Fairy</span>
+            </div>
+            <div class="theme princess">
+                <div class="overlay"></div>
+                <span class="theme-text">Princess</span>
+            </div>
+            <div class="theme superhero">
+                <div class="overlay"></div>
+                <span class="theme-text">Superhero</span>
+            </div>
+        </div>
+        <div class="enquire-section">
+            <button class="enquire-button" onclick="window.location.href='../party_themes/party-themes.html'">More Themes</button>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lorem vel leo
+            faucibus vestibulum.</p>
+        <div class="gallery-grid">
+            <img src="../images/halloween-theme.jpg" alt="Gallery Image 1" onclick="location.href='../images/halloween-theme.jpg'">
+            <img src="../images/sea-theme.jpg" alt="Gallery Image 3" onclick="location.href='../images/sea-theme.jpg'">
+            <img src="../images/clown-theme.jpg" alt="Gallery Image 2" onclick="location.href='../images/clown-theme.jpg'">
+            <img src="../images/bus-theme.jpg" alt="Gallery Image 4" onclick="location.href='../images/bus-theme.jpg'">
+        </div>
+
+        <div class="enquire-section">
+            <button class="enquire-button" onclick="window.location.href='../gallery/gallery.html'">See More</button>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Any questions?</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="enquiry">Enquiry:</label>
+                <textarea id="enquiry" name="enquiry" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Squishy Playground. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>

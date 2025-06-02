@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="about-styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Squishy Playground - About</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="../home/home.html">
+            <img class="logo" src="../images/logo.png"></img>
+        </a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../party_themes/party-themes.html">Party Themes</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h1>About</h1>
+    </section>
+
+    <section class="page-description">
+        <h2>About Squishy Playground</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia lacus nec
+            sapien blandit, non vehicula eros pretium. Curabitur tincidunt felis nec nisi facilisis, sed vehicula est
+            suscipit. Vivamus vel lacinia nulla, at gravida turpis. Sed ut nisi sed metus varius auctor ac at urna.</p>
+        <p class="description">Integer volutpat, turpis sit amet pharetra vehicula, urna mi suscipit libero, non
+            sollicitudin nunc felis eget magna. Aliquam erat volutpat. Cras ut orci at mauris ultricies vestibulum. Duis
+            vehicula, tortor in facilisis imperdiet, libero elit malesuada elit, at dignissim est nisi nec magna.</p>
+        <p class="description">Pellentesque scelerisque urna ac erat tempor, vitae suscipit velit dictum. Proin finibus
+            vestibulum mauris, nec sodales risus gravida vitae. Nam posuere auctor nisi a condimentum. Suspendisse
+            potenti. Aenean finibus lacus ac ipsum pharetra, sit amet convallis arcu pretium.</p>
+        <p class="description">Aenean malesuada risus et magna aliquet, sit amet laoreet enim euismod. Quisque ut quam
+            non ipsum venenatis suscipit. Sed vel volutpat orci. Integer a ligula eu justo lacinia tristique et eget
+            nulla. Nullam vitae mauris non sem suscipit gravida. Aliquam erat volutpat.</p>
+        <p class="description">Donec sagittis erat at dolor mollis, vel sodales erat dignissim. Sed sit amet libero a
+            lectus consectetur vehicula non in erat. Curabitur vestibulum, justo at scelerisque ullamcorper, felis elit
+            vehicula purus, vel dictum enim lorem vitae nulla. Vestibulum auctor sem quis elit mollis, sed tempor erat
+            dictum.</p>
+    </section>
+
+    <section class="enquire-section">
+        <button class="enquire-button" onclick="window.location.href='../contact/contact.html'">Enquire Now</button>
+    </section>
+
+    <section class="video-section">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8LSt8_11wbQ" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Squishy Playground. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>

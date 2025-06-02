@@ -1,0 +1,120 @@
+.party-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.theme {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: opacity 0.3s;
+}
+
+.theme:nth-child(1) {
+    background-image: url('../images/fairy-theme.jpg');
+}
+
+.theme:nth-child(2) {
+    background-image: url('../images/princess-theme.jpg');
+}
+
+.theme:nth-child(3) {
+    background-image: url('../images/superhero-theme.jpg');
+}
+
+.theme:nth-child(4) {
+    background-image: url('../images/halloween-theme.jpg');
+}
+
+.theme:nth-child(5) {
+    background-image: url('../images/mermaid-theme.jpg');
+}
+
+.theme:nth-child(6) {
+    background-image: url('../images/pirate-theme.jpg');
+}
+
+.theme:nth-child(7) {
+    background-image: url('../images/art-theme.jpg');
+}
+
+.theme:nth-child(8) {
+    background-image: url('../images/christmas-theme.jpg');
+}
+
+.theme:nth-child(9) {
+    background-image: url('../images/science-theme.jpg');
+}
+
+.theme:nth-child(10) {
+    background-image: url('../images/sports-theme.jpg');
+}
+
+.theme:nth-child(11) {
+    background-image: url('../images/face-paint-theme.jpg');
+}
+
+.theme:nth-child(12) {
+    background-image: url('../images/magic-show-theme.jpg');
+}
+
+.theme:nth-child(13) {
+    background-image: url('../images/others-theme.jpg');
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #251f1f63;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgb(0 0 0);
+}
+
+.theme:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .party-options {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .theme {
+        width: 45%;
+        max-width: none;
+        height: 180px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .party-options {
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .theme {
+        width: 90%;
+        height: 140px;
+        margin: 8px 0;
+    }
+
+    .overlay {
+        font-size: 16px;
+    }
+}

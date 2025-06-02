@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.main-header {
+    background: #ffcc00;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.logo {
+    width: 20vh;
+    max-width: 150px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 10px;
+}
+
+.nav-menu a {
+    color: #333;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 4;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 4px 0;
+}
+
+.banner {
+    background: url('../images/banner.jpg') no-repeat center center/cover;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    position: relative;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.banner h1 {
+    z-index: 1;
+    font-size: 3rem;
+    margin: 0 10px;
+}
+
+.page-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 100vh;
+    margin: 0 auto;
+}
+
+.description {
+    margin: 10px 0;
+}
+
+.contact-form {
+    padding: 30px;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #e6b800;
+}
+
+.enquire-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.enquire-button {
+    padding: 12px 24px;
+    background: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ffcc00, 0 0 10px #e6b800;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.enquire-button:hover {
+    box-shadow: 0 0 15px #ffcc00, 0 0 20px #e6b800;
+    transform: translateY(-3px);
+}
+
+.main-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 20vh;
+    }
+
+    .banner h1 {
+        font-size: 2.3rem;
+        padding: 0 15px;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #ffcc00;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+        padding: 10px 0;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+        margin: 40px 20px;
+        max-width: none;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 10vh;
+    }
+
+    .banner h1 {
+        font-size: 1.6rem;
+        padding: 0 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+        margin: 30px 15px;
+        max-width: none;
+        border-radius: 8px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .enquire-button {
+        font-size: 14px;
+        padding: 10px 20px;
+        box-shadow: 0 0 8px #ffcc00, 0 0 15px #e6b800;
+    }
+}

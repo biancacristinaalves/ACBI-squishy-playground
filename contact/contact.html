@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="contact-styles.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Squishy Playground - Contact</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="../home/home.html">
+            <img class="logo" src="../images/logo.png" alt="Squishy Playground Logo">
+        </a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="../party_themes/party-themes.html">Party Themes</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h1>Contact</h1>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Details</h2>
+        <p><strong>Address:</strong> Suite 510/451 Pitt St, Sydney NSW 2000</p>
+        <p><strong>Phone:</strong> 1300 237 741</p>
+    </section>
+
+    <section class="map-section">
+        <h2>Our Location</h2>
+        <iframe width="100%" height="400"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.283503091154!2d151.20727711535678!3d-33.87154508065881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b113cd2e3a3d%3A0x5017b2d3a1f2e1b7!2sSuite%20510%2F451%20Pitt%20St%2C%20Sydney%20NSW%202000!5e0!3m2!1sen!2sau!4v1682605462431!5m2!1sen!2sau"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" allowfullscreen>
+        </iframe>
+    </section>
+
+    <section class="contact-form">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="enquiry">Enquiry:</label>
+                <textarea id="enquiry" name="enquiry" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Squishy Playground. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>

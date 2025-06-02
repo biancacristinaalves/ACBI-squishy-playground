@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="party-styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Squishy Playground - Party Themes</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="../home/home.html">
+            <img class="logo" src="../images/logo.png" alt="Logo">
+        </a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="./party-themes.html">Party Themes</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../gallery/gallery.html">Gallery</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h1>Party Themes</h1>
+    </section>
+
+    <section class="page-description">
+        <h2>Our Themes</h2>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacinia lacus nec sapien blandit, non vehicula eros pretium. Curabitur tincidunt felis nec nisi facilisis, sed vehicula est suscipit. Vivamus vel lacinia nulla, at gravida turpis. Sed ut nisi sed metus varius auctor ac at urna. Integer volutpat, turpis sit amet pharetra vehicula, urna mi suscipit libero, non sollicitudin nunc felis eget magna. Aliquam erat volutpat. Cras ut orci at mauris ultricies vestibulum. Duis vehicula, tortor in facilisis imperdiet, libero elit malesuada elit, at dignissim est nisi nec magna.</p>
+    </section>
+    <section>
+        <div class="party-options">
+            <div class="theme" onclick="window.location.href='../fairy_theme/fairy-theme.html'">
+                <div class="overlay">Fairy</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Princess</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Superhero</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Halloween</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Mermaid</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Pirate</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Art</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Christmas</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Science</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Sports</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Face Paint</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Magic Show</div>
+            </div>
+            <div class="theme">
+                <div class="overlay">Others</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="enquire-section">
+        <button class="enquire-button" onclick="window.location.href='../contact/contact.html'">Enquire Now</button>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Squishy Playground. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>
