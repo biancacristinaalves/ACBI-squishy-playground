@@ -57,7 +57,7 @@ h2 {
 }
 
 .banner {
-    background: url('images/banner.jpg') no-repeat center center/cover;
+    background: url('/images/banner.jpg') no-repeat center center/cover;
     height: 30vh;
     display: flex;
     justify-content: center;
@@ -223,15 +223,15 @@ h2 {
 }
 
 .party-theme .themes .fairy {
-    background-image: url('images/fairy-theme.jpg');
+    background-image: url('/images/fairy-theme.jpg');
 }
 
 .party-theme .themes .princess {
-    background-image: url('images/princess-theme.jpg');
+    background-image: url('/images/princess-theme.jpg');
 }
 
 .party-theme .themes .superhero {
-    background-image: url('images/superhero-theme.jpg');
+    background-image: url('/images/superhero-theme.jpg');
 }
 
 .party-theme .themes .theme:hover .overlay {
