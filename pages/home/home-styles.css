@@ -46,15 +46,15 @@
 }
 
 .party-theme .themes .fairy {
-    background-image: url('../images/fairy-theme.jpg');
+    background-image: url('../../images/fairy-theme.jpg');
 }
 
 .party-theme .themes .princess {
-    background-image: url('../images/princess-theme.jpg');
+    background-image: url('../../images/princess-theme.jpg');
 }
 
 .party-theme .themes .superhero {
-    background-image: url('../images/superhero-theme.jpg');
+    background-image: url('../../images/superhero-theme.jpg');
 }
 
 .party-theme .themes .theme:hover .overlay {

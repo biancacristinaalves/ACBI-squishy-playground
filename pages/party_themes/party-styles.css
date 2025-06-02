@@ -20,55 +20,55 @@
 }
 
 .theme:nth-child(1) {
-    background-image: url('../images/fairy-theme.jpg');
+    background-image: url('../../images/fairy-theme.jpg');
 }
 
 .theme:nth-child(2) {
-    background-image: url('../images/princess-theme.jpg');
+    background-image: url('../../images/princess-theme.jpg');
 }
 
 .theme:nth-child(3) {
-    background-image: url('../images/superhero-theme.jpg');
+    background-image: url('../../images/superhero-theme.jpg');
 }
 
 .theme:nth-child(4) {
-    background-image: url('../images/halloween-theme.jpg');
+    background-image: url('../../images/halloween-theme.jpg');
 }
 
 .theme:nth-child(5) {
-    background-image: url('../images/mermaid-theme.jpg');
+    background-image: url('../../images/mermaid-theme.jpg');
 }
 
 .theme:nth-child(6) {
-    background-image: url('../images/pirate-theme.jpg');
+    background-image: url('../../images/pirate-theme.jpg');
 }
 
 .theme:nth-child(7) {
-    background-image: url('../images/art-theme.jpg');
+    background-image: url('../../images/art-theme.jpg');
 }
 
 .theme:nth-child(8) {
-    background-image: url('../images/christmas-theme.jpg');
+    background-image: url('../../images/christmas-theme.jpg');
 }
 
 .theme:nth-child(9) {
-    background-image: url('../images/science-theme.jpg');
+    background-image: url('../../images/science-theme.jpg');
 }
 
 .theme:nth-child(10) {
-    background-image: url('../images/sports-theme.jpg');
+    background-image: url('../../images/sports-theme.jpg');
 }
 
 .theme:nth-child(11) {
-    background-image: url('../images/face-paint-theme.jpg');
+    background-image: url('../../images/face-paint-theme.jpg');
 }
 
 .theme:nth-child(12) {
-    background-image: url('../images/magic-show-theme.jpg');
+    background-image: url('../../images/magic-show-theme.jpg');
 }
 
 .theme:nth-child(13) {
-    background-image: url('../images/others-theme.jpg');
+    background-image: url('../../images/others-theme.jpg');
 }
 
 .overlay {
